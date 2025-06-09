@@ -18,7 +18,7 @@ jobs:
       - name: Prepare build artifact for stashing
         run: |
           mkdir release
-          move D:\a\ysoserial.net\ysoserial.net\ysoserial\bin\Release .\release
+          move C:\a\ysoserial.net\ysoserial.net\ysoserial\bin\Release .\release
       - name: Upload artifact
         uses: actions/upload-artifact@v4.0.0
         with:
