@@ -6,7 +6,9 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
+        with:
+          ref: 'v2'          # 强制签出 v2 分支代码
       - name: Setup Nuget.exe
         uses: nuget/setup-nuget@v1
       - name: Restore packages
